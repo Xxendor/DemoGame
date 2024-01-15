@@ -11,5 +11,11 @@
 				"Editor"
 			]
 		}
+	],
+	"TargetPlatforms": [
+		"Android",
+		"Mac",
+		"Windows",
+		"IOS"
 	]
 }
