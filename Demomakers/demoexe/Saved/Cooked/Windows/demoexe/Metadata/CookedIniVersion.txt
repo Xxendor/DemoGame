@@ -821,7 +821,7 @@ Engine:/Script/AndroidFileServerEditor.AndroidFileServerRuntimeSettings:bReportS
 Engine:/Script/AndroidFileServerEditor.AndroidFileServerRuntimeSettings:ConnectionType:0=USBOnly
 Engine:/Script/AndroidFileServerEditor.AndroidFileServerRuntimeSettings:bUseManualIPAddress:0=False
 Engine:/Script/AndroidFileServerEditor.AndroidFileServerRuntimeSettings:ManualIPAddress:0=
-Game:/Script/UnrealEd.ProjectPackagingSettings:StagingDirectory:0=(Path="D/Escuela/2023/JUEGO/COMPILADO/Windows")
+Game:/Script/UnrealEd.ProjectPackagingSettings:StagingDirectory:0=(Path="D/Escuela/2023/JUEGO/COMPILADO/Windows/demoexe")
 Game:/Script/UnrealEd.ProjectPackagingSettings:BuildConfiguration:0=PPBC_Shipping
 Game:/Script/UnrealEd.ProjectPackagingSettings:FullRebuild:0=False
 Game:/Script/UnrealEd.ProjectPackagingSettings:UsePakFile:0=True
