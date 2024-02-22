@@ -1,0 +1,12 @@
+/NOLOGO
+/errorReport:prompt
+/MACHINE:x64
+/SUBSYSTEM:WINDOWS
+/DEF
+/NAME:"UnrealEditor-ProceduralLevelUtilityMaker.dll"
+/IGNORE:4221
+/NODEFAULTLIB
+"E:\ADBLinkGameStudio\Plugins\PluginsMaker\Intermediate\Build\Win64\PluginsMakerEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h.obj"
+"E:\ADBLinkGameStudio\Plugins\PluginsMaker\Plugins\ProceduralLevelUtilityMaker\Intermediate\Build\Win64\UnrealEditor\Development\ProceduralLevelUtilityMaker\Module.ProceduralLevelUtilityMaker.cpp.obj"
+"E:\ADBLinkGameStudio\Plugins\PluginsMaker\Plugins\ProceduralLevelUtilityMaker\Intermediate\Build\Win64\UnrealEditor\Development\ProceduralLevelUtilityMaker\Default.rc2.res"
+/OUT:"E:\ADBLinkGameStudio\Plugins\PluginsMaker\Plugins\ProceduralLevelUtilityMaker\Intermediate\Build\Win64\UnrealEditor\Development\ProceduralLevelUtilityMaker\UnrealEditor-ProceduralLevelUtilityMaker.lib"

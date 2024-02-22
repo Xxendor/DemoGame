@@ -1,0 +1,11 @@
+{
+	"RemapUnityFiles": 
+	{
+		"Module.ProceduralLevelUtilityMaker.cpp.obj": [
+			"PLUMBuildingBlocksData.gen.cpp.obj",
+			"ProceduralLevelUtilityMaker.init.gen.cpp.obj",
+			"PLUMBuildingBlocksData.cpp.obj",
+			"ProceduralLevelUtilityMaker.cpp.obj"
+		]
+	}
+}

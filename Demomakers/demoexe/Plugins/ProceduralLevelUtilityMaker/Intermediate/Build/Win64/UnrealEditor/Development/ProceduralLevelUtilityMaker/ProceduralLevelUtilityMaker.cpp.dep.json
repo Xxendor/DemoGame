@@ -1,0 +1,14 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "e:\\adblinkgamestudio\\plugins\\pluginsmaker\\plugins\\procedurallevelutilitymaker\\source\\procedurallevelutilitymaker\\private\\procedurallevelutilitymaker.cpp",
+        "ProvidedModule": "",
+        "PCH": "e:\\adblinkgamestudio\\plugins\\pluginsmaker\\intermediate\\build\\win64\\pluginsmakereditor\\development\\engine\\sharedpch.engine.shadowerrors.h.pch",
+        "Includes": [
+            "e:\\adblinkgamestudio\\plugins\\pluginsmaker\\plugins\\procedurallevelutilitymaker\\intermediate\\build\\win64\\unrealeditor\\development\\procedurallevelutilitymaker\\definitions.procedurallevelutilitymaker.h",
+            "e:\\adblinkgamestudio\\plugins\\pluginsmaker\\plugins\\procedurallevelutilitymaker\\source\\procedurallevelutilitymaker\\public\\procedurallevelutilitymaker.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}
