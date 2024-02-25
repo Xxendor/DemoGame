@@ -1,0 +1,12 @@
+/NOLOGO
+/errorReport:prompt
+/MACHINE:x64
+/SUBSYSTEM:WINDOWS
+/DEF
+/NAME:"UnrealEditor-BasicGAS.dll"
+/IGNORE:4221
+/NODEFAULTLIB
+"E:\ADBLinkGameStudio\PluginsMaker\Intermediate\Build\Win64\PluginsMakerEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h.obj"
+"E:\ADBLinkGameStudio\PluginsMaker\Plugins\BasicGAS\Intermediate\Build\Win64\UnrealEditor\Development\BasicGAS\Module.BasicGAS.cpp.obj"
+"E:\ADBLinkGameStudio\PluginsMaker\Plugins\BasicGAS\Intermediate\Build\Win64\UnrealEditor\Development\BasicGAS\Default.rc2.res"
+/OUT:"E:\ADBLinkGameStudio\PluginsMaker\Plugins\BasicGAS\Intermediate\Build\Win64\UnrealEditor\Development\BasicGAS\UnrealEditor-BasicGAS.lib"

@@ -1,0 +1,15 @@
+{
+	"RemapUnityFiles": 
+	{
+		"Module.BasicGAS.cpp.obj": [
+			"BasicGAS.init.gen.cpp.obj",
+			"BGASAction.gen.cpp.obj",
+			"BGASActionComponent.gen.cpp.obj",
+			"BGASActionEffect.gen.cpp.obj",
+			"BasicGAS.cpp.obj",
+			"BGASAction.cpp.obj",
+			"BGASActionComponent.cpp.obj",
+			"BGASActionEffect.cpp.obj"
+		]
+	}
+}

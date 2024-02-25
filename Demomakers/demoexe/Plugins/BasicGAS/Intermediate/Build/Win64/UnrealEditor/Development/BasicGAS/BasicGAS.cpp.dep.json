@@ -1,0 +1,14 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "e:\\adblinkgamestudio\\pluginsmaker\\plugins\\basicgas\\source\\basicgas\\private\\basicgas.cpp",
+        "ProvidedModule": "",
+        "PCH": "e:\\adblinkgamestudio\\pluginsmaker\\intermediate\\build\\win64\\pluginsmakereditor\\development\\engine\\sharedpch.engine.shadowerrors.h.pch",
+        "Includes": [
+            "e:\\adblinkgamestudio\\pluginsmaker\\plugins\\basicgas\\intermediate\\build\\win64\\unrealeditor\\development\\basicgas\\definitions.basicgas.h",
+            "e:\\adblinkgamestudio\\pluginsmaker\\plugins\\basicgas\\source\\basicgas\\public\\basicgas.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}
