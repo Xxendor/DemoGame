@@ -1,0 +1,8 @@
+En el tambor del Revolver va a ir apareciendo cada ciertos segundos, una Bala hasta llenar el tambor, luego desaparecen y se reinicia llenado de balas.
+
+Nose si querras colocar las balas a mano, una por una, o utilizar las imagenes que ya te habia mandado de los tambores con una bala mas cada uno.
+
+Lo que si, si usas esas imagenes, capaz que empiezan a aparecer desde "arriba en el centro" hacia la izquierda. Por mi esta bien. Luego lo podemos corregir.
+Sino deberias voltear horizontalmente cada imagen para que vayan apareciendo de arriba hacia la derecha.
+
+Fijate lo que te resulte mas comodo y rapido.
