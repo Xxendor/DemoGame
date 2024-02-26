@@ -10,6 +10,8 @@
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 class AActor;
+class UBGASActionComponent;
+class UWorld;
 #ifdef BASICGAS_BGASAction_generated_h
 #error "BGASAction.generated.h already included, missing '#pragma once' in BGASAction.h"
 #endif
@@ -21,6 +23,8 @@ class AActor;
 	virtual void OnStartAction_Implementation(AActor* Instigator); \
 	virtual bool CanStart_Implementation(AActor* Instigator); \
  \
+	DECLARE_FUNCTION(execGetActionComponent); \
+	DECLARE_FUNCTION(execGetWorld); \
 	DECLARE_FUNCTION(execOnStopAction); \
 	DECLARE_FUNCTION(execOnStartAction); \
 	DECLARE_FUNCTION(execStopAction); \
@@ -33,6 +37,8 @@ class AActor;
 	virtual void OnStartAction_Implementation(AActor* Instigator); \
 	virtual bool CanStart_Implementation(AActor* Instigator); \
  \
+	DECLARE_FUNCTION(execGetActionComponent); \
+	DECLARE_FUNCTION(execGetWorld); \
 	DECLARE_FUNCTION(execOnStopAction); \
 	DECLARE_FUNCTION(execOnStartAction); \
 	DECLARE_FUNCTION(execStopAction); \

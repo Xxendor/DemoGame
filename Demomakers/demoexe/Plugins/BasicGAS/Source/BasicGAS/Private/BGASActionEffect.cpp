@@ -17,13 +17,13 @@ void UBGASActionEffect::StartAction(AActor* Instigator)
 	if (Duration > 0)
 	{
 		FTimerDelegate Delegate;
-		Delegate.BindUFunction(this, "StopAction");
+		Delegate.BindUFunction(this, "StopAction", Instigator);
 		GetWorld()->GetTimerManager().SetTimer(DurationHandle, Delegate, Duration, false);
 	}
 	if (Period > 0)
 	{
 		FTimerDelegate Delegate;
-		Delegate.BindUFunction(this, "ExecutePeriodEffect");
+		Delegate.BindUFunction(this, "ExecutePeriodEffect", Instigator);
 		GetWorld()->GetTimerManager().SetTimer(PeriodHandle, Delegate, Period, true);
 	}
 }

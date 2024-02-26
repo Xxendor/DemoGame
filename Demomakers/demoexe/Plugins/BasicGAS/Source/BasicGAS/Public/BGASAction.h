@@ -54,7 +54,9 @@ public:
 	UPROPERTY(EditDefaultsOnly, Category = "Action")
 	FName ActionName;
 
+	UFUNCTION(BlueprintPure, Category = "Action")
 	UWorld* GetWorld() const override;
 
+	UFUNCTION(BlueprintPure, Category = "Action")
 	UBGASActionComponent* GetActionComponent() const;
 };

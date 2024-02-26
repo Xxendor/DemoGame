@@ -12,11 +12,27 @@ void EmptyLinkFunctionForGeneratedCodeBGASAction() {}
 // Cross Module References
 	BASICGAS_API UClass* Z_Construct_UClass_UBGASAction();
 	BASICGAS_API UClass* Z_Construct_UClass_UBGASAction_NoRegister();
+	BASICGAS_API UClass* Z_Construct_UClass_UBGASActionComponent_NoRegister();
 	COREUOBJECT_API UClass* Z_Construct_UClass_UObject();
 	ENGINE_API UClass* Z_Construct_UClass_AActor_NoRegister();
+	ENGINE_API UClass* Z_Construct_UClass_UWorld_NoRegister();
 	GAMEPLAYTAGS_API UScriptStruct* Z_Construct_UScriptStruct_FGameplayTagContainer();
 	UPackage* Z_Construct_UPackage__Script_BasicGAS();
 // End Cross Module References
+	DEFINE_FUNCTION(UBGASAction::execGetActionComponent)
+	{
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		*(UBGASActionComponent**)Z_Param__Result=P_THIS->GetActionComponent();
+		P_NATIVE_END;
+	}
+	DEFINE_FUNCTION(UBGASAction::execGetWorld)
+	{
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		*(UWorld**)Z_Param__Result=P_THIS->GetWorld();
+		P_NATIVE_END;
+	}
 	DEFINE_FUNCTION(UBGASAction::execOnStopAction)
 	{
 		P_GET_OBJECT(AActor,Z_Param_Instigator);
@@ -102,7 +118,9 @@ void EmptyLinkFunctionForGeneratedCodeBGASAction() {}
 		UClass* Class = UBGASAction::StaticClass();
 		static const FNameNativePtrPair Funcs[] = {
 			{ "CanStart", &UBGASAction::execCanStart },
+			{ "GetActionComponent", &UBGASAction::execGetActionComponent },
 			{ "GetIsRunning", &UBGASAction::execGetIsRunning },
+			{ "GetWorld", &UBGASAction::execGetWorld },
 			{ "OnStartAction", &UBGASAction::execOnStartAction },
 			{ "OnStopAction", &UBGASAction::execOnStopAction },
 			{ "StopAction", &UBGASAction::execStopAction },
@@ -146,6 +164,47 @@ void EmptyLinkFunctionForGeneratedCodeBGASAction() {}
 		}
 		return ReturnFunction;
 	}
+	struct Z_Construct_UFunction_UBGASAction_GetActionComponent_Statics
+	{
+		struct BGASAction_eventGetActionComponent_Parms
+		{
+			UBGASActionComponent* ReturnValue;
+		};
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_ReturnValue_MetaData[];
+#endif
+		static const UECodeGen_Private::FObjectPropertyParams NewProp_ReturnValue;
+		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UECodeGen_Private::FFunctionParams FuncParams;
+	};
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UBGASAction_GetActionComponent_Statics::NewProp_ReturnValue_MetaData[] = {
+		{ "EditInline", "true" },
+	};
+#endif
+	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UBGASAction_GetActionComponent_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000080588, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(BGASAction_eventGetActionComponent_Parms, ReturnValue), Z_Construct_UClass_UBGASActionComponent_NoRegister, METADATA_PARAMS(Z_Construct_UFunction_UBGASAction_GetActionComponent_Statics::NewProp_ReturnValue_MetaData, UE_ARRAY_COUNT(Z_Construct_UFunction_UBGASAction_GetActionComponent_Statics::NewProp_ReturnValue_MetaData)) };
+	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UBGASAction_GetActionComponent_Statics::PropPointers[] = {
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UBGASAction_GetActionComponent_Statics::NewProp_ReturnValue,
+	};
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UBGASAction_GetActionComponent_Statics::Function_MetaDataParams[] = {
+		{ "Category", "Action" },
+		{ "ModuleRelativePath", "Public/BGASAction.h" },
+	};
+#endif
+	const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UBGASAction_GetActionComponent_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UBGASAction, nullptr, "GetActionComponent", nullptr, nullptr, sizeof(Z_Construct_UFunction_UBGASAction_GetActionComponent_Statics::BGASAction_eventGetActionComponent_Parms), Z_Construct_UFunction_UBGASAction_GetActionComponent_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UBGASAction_GetActionComponent_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UBGASAction_GetActionComponent_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UBGASAction_GetActionComponent_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_UBGASAction_GetActionComponent()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_UBGASAction_GetActionComponent_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
 	struct Z_Construct_UFunction_UBGASAction_GetIsRunning_Statics
 	{
 		struct BGASAction_eventGetIsRunning_Parms
@@ -181,6 +240,39 @@ void EmptyLinkFunctionForGeneratedCodeBGASAction() {}
 		if (!ReturnFunction)
 		{
 			UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_UBGASAction_GetIsRunning_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_UBGASAction_GetWorld_Statics
+	{
+		struct BGASAction_eventGetWorld_Parms
+		{
+			UWorld* ReturnValue;
+		};
+		static const UECodeGen_Private::FObjectPropertyParams NewProp_ReturnValue;
+		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UECodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UBGASAction_GetWorld_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(BGASAction_eventGetWorld_Parms, ReturnValue), Z_Construct_UClass_UWorld_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UBGASAction_GetWorld_Statics::PropPointers[] = {
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UBGASAction_GetWorld_Statics::NewProp_ReturnValue,
+	};
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UBGASAction_GetWorld_Statics::Function_MetaDataParams[] = {
+		{ "Category", "Action" },
+		{ "ModuleRelativePath", "Public/BGASAction.h" },
+	};
+#endif
+	const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UBGASAction_GetWorld_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UBGASAction, nullptr, "GetWorld", nullptr, nullptr, sizeof(Z_Construct_UFunction_UBGASAction_GetWorld_Statics::BGASAction_eventGetWorld_Parms), Z_Construct_UFunction_UBGASAction_GetWorld_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UBGASAction_GetWorld_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UBGASAction_GetWorld_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UBGASAction_GetWorld_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_UBGASAction_GetWorld()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_UBGASAction_GetWorld_Statics::FuncParams);
 		}
 		return ReturnFunction;
 	}
@@ -314,7 +406,9 @@ void EmptyLinkFunctionForGeneratedCodeBGASAction() {}
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_UBGASAction_Statics::FuncInfo[] = {
 		{ &Z_Construct_UFunction_UBGASAction_CanStart, "CanStart" }, // 721438218
+		{ &Z_Construct_UFunction_UBGASAction_GetActionComponent, "GetActionComponent" }, // 3864320282
 		{ &Z_Construct_UFunction_UBGASAction_GetIsRunning, "GetIsRunning" }, // 3911294541
+		{ &Z_Construct_UFunction_UBGASAction_GetWorld, "GetWorld" }, // 2785267912
 		{ &Z_Construct_UFunction_UBGASAction_OnStartAction, "OnStartAction" }, // 2852936430
 		{ &Z_Construct_UFunction_UBGASAction_OnStopAction, "OnStopAction" }, // 2311219771
 		{ &Z_Construct_UFunction_UBGASAction_StopAction, "StopAction" }, // 3328561976
@@ -409,9 +503,9 @@ void EmptyLinkFunctionForGeneratedCodeBGASAction() {}
 		static const FClassRegisterCompiledInInfo ClassInfo[];
 	};
 	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_PluginsMaker_Plugins_BasicGAS_Source_BasicGAS_Public_BGASAction_h_Statics::ClassInfo[] = {
-		{ Z_Construct_UClass_UBGASAction, UBGASAction::StaticClass, TEXT("UBGASAction"), &Z_Registration_Info_UClass_UBGASAction, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UBGASAction), 2020985122U) },
+		{ Z_Construct_UClass_UBGASAction, UBGASAction::StaticClass, TEXT("UBGASAction"), &Z_Registration_Info_UClass_UBGASAction, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UBGASAction), 3902922504U) },
 	};
-	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_PluginsMaker_Plugins_BasicGAS_Source_BasicGAS_Public_BGASAction_h_3896353733(TEXT("/Script/BasicGAS"),
+	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_PluginsMaker_Plugins_BasicGAS_Source_BasicGAS_Public_BGASAction_h_982665773(TEXT("/Script/BasicGAS"),
 		Z_CompiledInDeferFile_FID_PluginsMaker_Plugins_BasicGAS_Source_BasicGAS_Public_BGASAction_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_PluginsMaker_Plugins_BasicGAS_Source_BasicGAS_Public_BGASAction_h_Statics::ClassInfo),
 		nullptr, 0,
 		nullptr, 0);
