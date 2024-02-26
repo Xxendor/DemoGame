@@ -2,6 +2,8 @@
 #include "E:/ADBLinkGameStudio/PluginsMaker/Plugins/BasicGAS/Intermediate/Build/Win64/UnrealEditor/Inc/BasicGAS/UHT/BasicGAS.init.gen.cpp"
 #include "E:/ADBLinkGameStudio/PluginsMaker/Plugins/BasicGAS/Intermediate/Build/Win64/UnrealEditor/Inc/BasicGAS/UHT/BGASAction.gen.cpp"
 #include "E:/ADBLinkGameStudio/PluginsMaker/Plugins/BasicGAS/Intermediate/Build/Win64/UnrealEditor/Inc/BasicGAS/UHT/BGASActionComponent.gen.cpp"
+#include "E:/ADBLinkGameStudio/PluginsMaker/Plugins/BasicGAS/Intermediate/Build/Win64/UnrealEditor/Inc/BasicGAS/UHT/BGASActionEffect.gen.cpp"
 #include "E:/ADBLinkGameStudio/PluginsMaker/Plugins/BasicGAS/Source/BasicGAS/Private/BasicGAS.cpp"
 #include "E:/ADBLinkGameStudio/PluginsMaker/Plugins/BasicGAS/Source/BasicGAS/Private/BGASAction.cpp"
 #include "E:/ADBLinkGameStudio/PluginsMaker/Plugins/BasicGAS/Source/BasicGAS/Private/BGASActionComponent.cpp"
+#include "E:/ADBLinkGameStudio/PluginsMaker/Plugins/BasicGAS/Source/BasicGAS/Private/BGASActionEffect.cpp"

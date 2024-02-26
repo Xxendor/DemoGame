@@ -65,8 +65,8 @@
 #define UE_IS_ENGINE_MODULE 0
 #define UE_DISABLE_INLINE_GEN_CPP 0
 #define UE_ENABLE_INCLUDE_ORDER_DEPRECATED_IN_5_1 0
-#define UE_PROJECT_NAME PluginsMaker
-#define UE_TARGET_NAME PluginsMakerEditor
+#define UE_PROJECT_NAME demoexe
+#define UE_TARGET_NAME UnrealEditor
 #define UE_MODULE_NAME "BasicGAS"
 #define UE_PLUGIN_NAME "BasicGAS"
 #define IMPLEMENT_ENCRYPTION_KEY_REGISTRATION() 

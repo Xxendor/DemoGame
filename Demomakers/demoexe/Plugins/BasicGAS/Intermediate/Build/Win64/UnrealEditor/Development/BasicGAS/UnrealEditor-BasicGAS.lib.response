@@ -6,7 +6,7 @@
 /NAME:"UnrealEditor-BasicGAS.dll"
 /IGNORE:4221
 /NODEFAULTLIB
-"E:\ADBLinkGameStudio\PluginsMaker\Intermediate\Build\Win64\PluginsMakerEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h.obj"
-"E:\ADBLinkGameStudio\PluginsMaker\Plugins\BasicGAS\Intermediate\Build\Win64\UnrealEditor\Development\BasicGAS\Module.BasicGAS.cpp.obj"
-"E:\ADBLinkGameStudio\PluginsMaker\Plugins\BasicGAS\Intermediate\Build\Win64\UnrealEditor\Development\BasicGAS\Default.rc2.res"
-/OUT:"E:\ADBLinkGameStudio\PluginsMaker\Plugins\BasicGAS\Intermediate\Build\Win64\UnrealEditor\Development\BasicGAS\UnrealEditor-BasicGAS.lib"
+"C:\ADBLinkGameStudios\DemoGame\Demomakers\demoexe\Intermediate\Build\Win64\UnrealEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h.obj"
+"C:\ADBLinkGameStudios\DemoGame\Demomakers\demoexe\Plugins\BasicGAS\Intermediate\Build\Win64\UnrealEditor\Development\BasicGAS\Module.BasicGAS.cpp.obj"
+"C:\ADBLinkGameStudios\DemoGame\Demomakers\demoexe\Plugins\BasicGAS\Intermediate\Build\Win64\UnrealEditor\Development\BasicGAS\Default.rc2.res"
+/OUT:"C:\ADBLinkGameStudios\DemoGame\Demomakers\demoexe\Plugins\BasicGAS\Intermediate\Build\Win64\UnrealEditor\Development\BasicGAS\UnrealEditor-BasicGAS.lib"
